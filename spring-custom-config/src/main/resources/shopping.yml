@@ -1,0 +1,22 @@
+shopping:
+
+    owner: Satyam
+
+    budget: 5000
+
+    items:
+
+      Fruits:
+        - Apple
+        - Mango
+        - Banana
+
+      Vegetables:
+        - Potato
+        - Tomato
+        - Onion
+
+      Dairy:
+        - Milk
+        - Butter
+        - Cheese
