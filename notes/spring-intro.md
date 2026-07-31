@@ -53,6 +53,25 @@ one per HTTP request, or one per user session?"
   Application   1                  Web application
   WebSocket     1                  WebSocket connection
 
+## Spring IOC container
+
+```java
+Spring Boot Starts
+        │
+        ▼
+Component Scan
+        │
+        ▼
+Creates Beans
+        │
+        ▼
+Stores them in IoC Container
+        │
+        ▼
+Injects them wherever required
+
+```
+
 ## Component Scanning
 
 Component scanning is the process by which Spring automatically detects classes annotated with 
@@ -79,7 +98,9 @@ registers them as beans in the IoC container.
 @RestController
 ```
 
-## Contructor Injection
+## Dependency Injection
+
+### Contructor Injection
 
 Constructor Injection is a form of **Dependency Injection (DI)** where
 Spring provides the required dependencies through a class constructor
@@ -87,6 +108,62 @@ when creating the bean.
 
 Instead of creating dependencies using `new`, the class asks Spring to
 provide them.
+
+```java
+@Service
+public class UserService {
+
+}
+
+@RestController
+public class UserController {
+
+    private final UserService service;
+
+    public UserController(UserService service) {
+        this.service = service;
+    }
+
+    @GetMapping("/users")
+    public List<User> getUsers() {
+        return service.getUsers();
+    }
+}
+
+//in background spring does something like below
+UserService service = new UserService();
+
+UserController controller =
+        new UserController(service);
+
+```
+
+### @Autowired
+
+```java
+@RestController
+public class UserController {
+
+    private final UserService service;
+
+    @Autowired
+    public UserController(UserService service) {
+        this.service = service;
+    }
+}
+
+//in modern spring 4.3, id there is only one constructor, you dont even need @Autowired
+@RestController
+public class UserController {
+
+    private final UserService service;
+
+    public UserController(UserService service) {
+        this.service = service;
+    }
+}
+
+```
 
 ## Mental Model
 

@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: spring-logging
+
+logging:
+    level:
+      root: INFO
+      com.satyamx.logging: INFO
+
+    file:
+      name: logs/application.logs
+
+    pattern:
+      console:"%d{yyyy-MM-dd HH:mm:ss} %-5level [%thread] %logger{36} - %msg%n"

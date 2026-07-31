@@ -1,0 +1,39 @@
+2026-07-30T08:40:48.627+05:30  INFO 83844 --- [spring-logging] [main] c.s.logging.SpringLoggingApplication     : Starting SpringLoggingApplication using Java 24.0.2 with PID 83844 (/Users/satyam/Personal/Projects/Backend/spring-logging/target/classes started by satyam in /Users/satyam/Personal/Projects/Backend/spring-logging)
+2026-07-30T08:40:48.629+05:30 DEBUG 83844 --- [spring-logging] [main] c.s.logging.SpringLoggingApplication     : Running with Spring Boot v4.1.0, Spring v7.0.8
+2026-07-30T08:40:48.630+05:30  INFO 83844 --- [spring-logging] [main] c.s.logging.SpringLoggingApplication     : No active profile set, falling back to 1 default profile: "default"
+2026-07-30T08:40:48.984+05:30  INFO 83844 --- [spring-logging] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-07-30T08:40:48.992+05:30  INFO 83844 --- [spring-logging] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-30T08:40:48.992+05:30  INFO 83844 --- [spring-logging] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-07-30T08:40:49.010+05:30  INFO 83844 --- [spring-logging] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 351 ms
+2026-07-30T08:40:49.147+05:30  INFO 83844 --- [spring-logging] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-07-30T08:40:49.150+05:30  INFO 83844 --- [spring-logging] [main] c.s.logging.SpringLoggingApplication     : Started SpringLoggingApplication in 0.774 seconds (process running for 0.95)
+2026-07-30T08:41:29.926+05:30  INFO 83844 --- [spring-logging] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-30T08:41:29.926+05:30  INFO 83844 --- [spring-logging] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-07-30T08:41:29.928+05:30  INFO 83844 --- [spring-logging] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-07-30T08:41:29.950+05:30  INFO 83844 --- [spring-logging] [http-nio-8080-exec-2] c.s.logging.controller.UserController    : Received request for user 1
+2026-07-30T08:41:29.950+05:30 DEBUG 83844 --- [spring-logging] [http-nio-8080-exec-2] c.satyamx.logging.service.UserService    : Searching for user 1
+2026-07-30T08:41:29.950+05:30  INFO 83844 --- [spring-logging] [http-nio-8080-exec-2] c.satyamx.logging.service.UserService    : User 1 found
+2026-07-30T08:41:34.799+05:30  INFO 83844 --- [spring-logging] [http-nio-8080-exec-3] c.s.logging.controller.UserController    : Received request for user 11
+2026-07-30T08:41:34.800+05:30 DEBUG 83844 --- [spring-logging] [http-nio-8080-exec-3] c.satyamx.logging.service.UserService    : Searching for user 11
+2026-07-30T08:41:34.801+05:30  INFO 83844 --- [spring-logging] [http-nio-8080-exec-3] c.satyamx.logging.service.UserService    : User 11 found
+2026-07-30T08:41:39.269+05:30  INFO 83844 --- [spring-logging] [http-nio-8080-exec-4] c.s.logging.controller.UserController    : Received request for user -1
+2026-07-30T08:41:39.270+05:30 DEBUG 83844 --- [spring-logging] [http-nio-8080-exec-4] c.satyamx.logging.service.UserService    : Searching for user -1
+2026-07-30T08:41:39.270+05:30  WARN 83844 --- [spring-logging] [http-nio-8080-exec-4] c.satyamx.logging.service.UserService    : Invalid user id -1
+2026-07-30T08:41:44.116+05:30  WARN 83844 --- [spring-logging] [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "ass"]
+2026-07-30T08:42:00.103+05:30  INFO 83844 --- [spring-logging] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-30T08:42:00.107+05:30  INFO 83844 --- [spring-logging] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-07-30T08:44:35.607+05:30  INFO 84383 --- [spring-logging] [main] c.s.logging.SpringLoggingApplication     : Starting SpringLoggingApplication using Java 24.0.2 with PID 84383 (/Users/satyam/Personal/Projects/Backend/spring-logging/target/classes started by satyam in /Users/satyam/Personal/Projects/Backend/spring-logging)
+2026-07-30T08:44:35.609+05:30  INFO 84383 --- [spring-logging] [main] c.s.logging.SpringLoggingApplication     : No active profile set, falling back to 1 default profile: "default"
+2026-07-30T08:44:35.956+05:30  INFO 84383 --- [spring-logging] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-07-30T08:44:35.964+05:30  INFO 84383 --- [spring-logging] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-30T08:44:35.964+05:30  INFO 84383 --- [spring-logging] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-07-30T08:44:35.980+05:30  INFO 84383 --- [spring-logging] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 349 ms
+2026-07-30T08:44:36.128+05:30  INFO 84383 --- [spring-logging] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-07-30T08:44:36.131+05:30  INFO 84383 --- [spring-logging] [main] c.s.logging.SpringLoggingApplication     : Started SpringLoggingApplication in 0.761 seconds (process running for 0.948)
+2026-07-30T08:44:39.427+05:30  INFO 84383 --- [spring-logging] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-30T08:44:39.427+05:30  INFO 84383 --- [spring-logging] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-07-30T08:44:39.428+05:30  INFO 84383 --- [spring-logging] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-07-30T08:44:39.447+05:30  WARN 84383 --- [spring-logging] [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "ass"]
+2026-07-30T08:45:10.118+05:30  WARN 84383 --- [spring-logging] [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "ass"]
+2026-07-30T08:45:55.496+05:30  INFO 84383 --- [spring-logging] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-30T08:45:55.500+05:30  INFO 84383 --- [spring-logging] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
