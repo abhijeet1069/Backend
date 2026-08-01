@@ -1,4 +1,4 @@
-package com.demo.jpa.manytoOne;
+package com.demo.jpa.manytoOne.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -9,7 +9,7 @@ import jakarta.persistence.Table;
 public class Department {
     @Id
     private Long id;
-    
+
     private String name;
 
     public Department(){}

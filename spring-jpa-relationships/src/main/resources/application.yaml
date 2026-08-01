@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: spring-jpa-relationships
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/satyam
+    username: satyam_spring
+    password: satyamx
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+
+    show: true
+
+    properties:
+      hibernate:
+        format_sql: true

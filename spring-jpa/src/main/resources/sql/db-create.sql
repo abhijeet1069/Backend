@@ -8,11 +8,17 @@ CREATE TABLE employee (
 create user satyam_spring with password 'satyamx';
 grant all privileges on database satyam to satyam_spring;
 
--- Grant specific access (or replace with ALL PRIVILEGES)
-GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE employee TO satyam_spring;
+-- 1. Give schema access
+GRANT USAGE ON SCHEMA public TO satyam_spring;
 
--- for sequences to primary key
-GRANT USAGE, SELECT, UPDATE ON ALL SEQUENCES IN SCHEMA public TO satyam_spring;
+-- 2. Give read access to ALL current tables (employee, department, etc.)
+GRANT SELECT ON ALL TABLES IN SCHEMA public TO satyam_spring;
+
+-- 3. Give write/modify access if Spring Boot needs to insert/update
+GRANT INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA public TO satyam_spring;
+
+-- 4. Give sequence access for ID generation
+GRANT USAGE, SELECT ON ALL SEQUENCES IN SCHEMA public TO satyam_spring;
 
 -- check users for db satyam
 SELECT
