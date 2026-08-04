@@ -8,5 +8,4 @@ public class SpringJpaTransactionsApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SpringJpaTransactionsApplication.class, args);
 	}
-
 }

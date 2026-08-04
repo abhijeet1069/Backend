@@ -8,3 +8,7 @@ INSERT INTO account(owner, balance)
 VALUES
     ('Alice', 1000),
     ('Bob', 500);
+
+
+GRANT ALL ON ALL TABLES IN SCHEMA public TO satyam_spring;
+GRANT ALL ON ALL SEQUENCES IN SCHEMA public TO satyam_spring;
